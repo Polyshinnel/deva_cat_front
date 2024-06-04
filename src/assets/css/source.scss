@@ -10,6 +10,8 @@
 
 *{
     color: var(--primary-color);
+    outline: none;
+    box-sizing: border-box;
 }
 
 
@@ -34,4 +36,96 @@
             font-weight: 600;
         }
     }
+}
+
+.product__list-item{
+    border: 1px solid var(--primary-color);
+}
+
+.advantages-list__item{
+    width: 360px;
+}
+
+.about-block__image-block{
+    width: 360px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.contact-block{
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-block__img{
+    height: 100%;
+    width: 500px;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.contact-block__form{
+    width: calc(100% - 500px);
+    height: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 0 10px 10px 0;
+}
+
+.contact-form{
+    width: 460px;
+}
+
+.contact-form__item{
+    margin-top: 5px;
+
+    input{
+        width: 100%;
+        border: 1px solid var(--border-color);
+        margin-top: 5px;
+        border-radius: 10px;
+        height: 40px;
+        padding: 0 10px;
+    }
+
+    textarea{
+        width: 100%;
+        border: 1px solid var(--border-color);
+        margin-top: 5px;
+        border-radius: 10px;
+        height: 85px;
+        padding: 10px;
+    }
+}
+
+.send-btn{
+    width: 130px;
+    height: 40px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+
+    &:hover{
+        background: #244c6d;
+    }
+}
+
+.footer{
+    background: #E0F1FF;
 }
